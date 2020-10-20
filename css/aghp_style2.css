@@ -1,0 +1,695 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/** End of Eric Meyer's Reset **/
+
+
+body{
+	font-family: 'Sorts Mill Goudy', serif;
+	color: #3a3a3a;
+}
+
+
+
+/**** HEADER ****/
+
+.headersection{
+	box-sizing: border-box;
+	padding: 2% 5%;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	text-align: center;
+}
+
+#logo-img {
+	background: url('../images/logo_lg.jpg') no-repeat;
+	width: 397px;
+	height: 200px;
+	display: inline-block;
+	text-align: left;
+  }
+  
+.header-title{
+	text-align: right;
+	display: inline-block;
+	box-sizing: border-box;
+	color: #484848;
+	padding-left: 45px;
+	position: relative;
+	bottom: 30px;
+}
+
+.header-title h1{
+	text-align: left;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.header-title h2{
+	text-align: left;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+.header-title p{
+	text-align: left;
+	line-height: 1.3em;
+}
+
+
+.nav-head{
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.navbar{
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.navbar a{
+	text-align: center;
+	display: inline-block;
+	/* font-family: 'perpetua', 'Californian FB', 'Calisto MT', 'Garamond'; */
+	font-variant: small-caps;
+	font-size: 20px;
+    color: #777777;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.1s;
+}
+.navbar a:first-child{
+	padding-left: 0;
+}
+.navbar a:last-child{
+	padding-right: 0;
+}
+
+.navbar a:hover{
+	color: #333;
+	text-shadow: 1px 1px 2px #777;
+}
+
+#header-line{
+	width: 90%;
+}
+
+
+/**** FOOTER ****/
+
+footer{
+	padding: 40px 10%;
+	background-color: #484848;
+	color: #fff;
+	font-size: 18px;
+}
+
+#foot-section{
+	width: 480px;
+	text-align: center;
+	margin: auto;
+}
+	footer nav, footer div{
+		text-align: left;
+	}
+}
+
+.nav-ft{
+	display: block;
+	margin-bottom: 30px;
+}
+.nav-ft a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.15s;
+	padding: 12px;
+	display: inline-block;
+}
+.nav-ft a:hover {
+	color: rgb(152 138 138);
+}
+
+
+#nav-contact a{
+	vertical-align: middle;
+}
+.fb, .in{
+	width: 24px;
+	height: 24px;
+}
+.fb:hover, .in:hover{
+	opacity: 0.6;
+}
+
+.alp{
+	width: 44px;
+	margin-right: 15px;
+}
+#alp-link a, #alp-link p{
+	display: inline-block;
+	vertical-align: middle;
+}
+#alp-link p{
+	line-height: 1.3em;
+}
+.alp:hover{
+	opacity: 0.6;
+}
+
+small{
+	font-size: 14px;
+	display: block;
+	margin-top: 30px;
+}
+
+
+/*******HOME*********/
+
+main{
+	box-sizing: border-box;
+	padding: 5%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: block;
+	font-size: 20px;
+	clear: both;
+}
+
+.home-text{
+	box-sizing: border-box;
+	width:320px;
+	display: inline-block;
+	text-align: justify;
+	line-height: 1.2em;
+	padding: 30px;
+}
+
+#home-abbot{
+	background: url('../images/abbot.jpg') no-repeat;
+	width: 540px;
+	height: 426px;
+}
+#home-martel{
+	background: url('../images/martel.jpg') no-repeat;
+	width: 540px;
+	height: 383px;
+}
+#home-purelm{
+	background: url('../images/pur_elm.jpg') no-repeat;
+	width: 540px;
+	height: 359px;
+}
+#home-purelm-sm{
+	display: none;
+}
+
+.home-img{
+	display: inline-block;
+	width: 540px;
+}
+
+.img-sm{
+	display: none;
+}
+
+.intro{
+	position: relative;
+	bottom: 30px;
+}
+.portrait{
+	position: relative;
+	bottom: 40px;
+}
+.specs{
+	position: relative;
+	bottom: 60px;
+}
+.accs{
+	position: relative;
+}
+
+
+
+/* * * GALLERY * * */
+   
+.gal{
+	width: 800px;
+	text-align: center;
+	margin:auto;
+	margin-bottom: 40px;
+}
+.galpic{
+	box-sizing: border-box;
+	border: 5px solid #777;
+	width: 790px;
+	height: 621px;
+	margin: auto;
+}
+
+figcaption{
+	padding: 0 20%;
+	text-align: center;
+	margin: auto;
+	line-height: 1.2em;
+	margin: 10px 5px;
+	font-size: .8em;
+}
+
+#aa{
+	background: url(../images/gal-1-aa.png) no-repeat;
+}
+#letitbe{
+	background: url(../images/gal-2-letitbe.png) no-repeat;
+}
+#martel{
+	background: url(../images/gal-3-martel.png) no-repeat;
+}
+#ueland{
+	background: url(../images/gal-4-ueland.png) no-repeat;
+}
+#egg{
+	background: url(../images/gal-5-egg.png) no-repeat;
+}
+#purelm{
+	background: url(../images/gal-6-purelm.png) no-repeat;
+}
+#abbot{
+	background: url(../images/gal-7-abbot.png) no-repeat;
+}
+#second{
+	background: url(../images/gal-8-3045.png) no-repeat;
+}
+#girard{
+	background: url(../images/gal-9-girard.png) no-repeat;
+}
+#lein{
+	background: url(../images/gal-10-lein.png) no-repeat;
+}
+
+.galpic-sm{
+	display: none;
+}
+
+.acc-tes{
+	width: 70%;
+	text-align: center;
+	margin: auto;
+}
+
+#accessories p{
+	text-align: justify;
+	margin-bottom: 10px;
+	line-height: 1.2em;
+}
+#di-testimonial{
+	width: 55%;
+	text-align: justify;
+	font-style: italic;
+	line-height: 1.2em;
+	font-size: .9em;
+}
+#di-testimonial p{
+	margin-bottom: 10px;
+}
+p.signature{
+	text-align: right;
+}
+
+#diane{
+	width: 250px;
+	text-align: center;
+	margin: auto;
+}
+#diane img{
+	width: 100%;
+}
+
+
+/** ABOUT ME **/
+
+
+.vork-section{
+	width: 26%;
+	min-width: 400px;
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+   
+.vork-fig{
+    text-align: center;
+	margin: auto;
+}
+
+.vork{
+    width: 100%;
+}
+
+.mask{
+	display: inline-block;
+	width:540px;
+}
+
+.maskpic{
+	width: 50%;
+	text-align: center;
+}
+
+/* End Testamonial Styling */
+
+/* Contact Styling */
+
+.quote{
+    width: 26%;
+	min-width: 500px;
+    text-align: center;
+    margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.quote h2{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.quote p {
+	text-align: justify;
+	margin-top: 1em ;
+	margin-bottom: 1em ;
+	text-indent: 2em;
+}
+
+
+@media (min-width: 1023px) and (max-width: 1199px){
+	.header-title{
+		padding-left: 25px;
+	}
+}
+
+@media (max-width: 1022px) {
+	
+	/** HEADER **/
+	
+	.header-title{
+		display: block;
+		bottom: 0;
+		text-align: center;
+		padding: 0;
+	}
+	.header-title h1, .header-title h2, .header-title p{
+		text-align: center;
+	}
+	
+	/** HOMEPAGE **/
+	
+	.home-text{
+		display: block;
+		margin: auto;
+		position: static;
+		width: 400px;
+	}
+	
+	.img-lg{
+		display: none;
+	}
+	.home-img{
+		width: 397px;
+	}
+	#home-abbot{
+		background: url('../images/abbot-sm.jpg') no-repeat;
+		width: 397px;
+		height: 313px;
+	}
+	#home-purelm-sm{
+		background: url('../images/pur_elm-sm.jpg') no-repeat;
+		width: 397px;
+		height: 264px;
+		display: inline-block;
+	}
+	/* .img-sm{
+		display: inline-block;
+	} */
+	#home-martel{
+		background: url('../images/martel-sm.jpg') no-repeat;
+		width: 397px;
+		height: 282px;
+	}
+	
+	/** GALLERY **/
+	
+	.gal{
+		max-width: 500px;
+		text-align: center;
+	}
+	.galpic{
+		width: 490px;
+		height: 385px;
+	}
+	#aa{
+		background: url(../images/gal-1-aa-sm.png) no-repeat;
+	}
+	#letitbe{
+	background: url(../images/gal-2-letitbe-sm.png) no-repeat;
+	}
+	#martel{
+	background: url(../images/gal-3-martel-sm.png) no-repeat;
+	}
+	#ueland{
+	background: url(../images/gal-4-ueland-sm.png) no-repeat;
+	}
+	#egg{
+	background: url(../images/gal-5-egg-sm.png) no-repeat;
+	}
+	#purelm{
+	background: url(../images/gal-6-purelm-sm.png) no-repeat;
+	}
+	#abbot{
+	background: url(../images/gal-7-abbot-sm.png) no-repeat;
+	}
+	#second{
+	background: url(../images/gal-8-3045-sm.png) no-repeat;
+	}
+	#girard{
+	background: url(../images/gal-9-girard-sm.png) no-repeat;
+	}
+	#lein{
+	background: url(../images/gal-10-lein-sm.png) no-repeat;
+	}
+}
+
+
+@media (max-width: 590px){
+	
+	.gal{
+		width: 90%;
+	}
+	.gal figure{
+		width: 90%;
+		margin: auto;
+		width: 100%;
+	}
+	
+	.galpic{
+		display: none;
+		background: none;
+	}
+	
+	.galpic-sm{
+		display: block;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+		box-sizing: border-box;
+		border: 5px solid #777;
+	}
+}
+
+@media (max-width: 550px){
+	
+	/** HEADER **/
+	
+	body{
+		text-align: center;
+		margin: auto;
+	}
+	header{
+		text-align: center;
+		margin: auto;
+	}
+	.headersection{
+		box-sizing: border-box;
+		text-align: center;
+		margin: auto;
+	}
+	.nav-head{
+		width: 80%;
+		text-align: center;
+	}
+	#logo-img {
+		background: url('../images/logo-xsm.jpg') no-repeat;
+		width: 250px;
+		height: 126px;
+		text-align: center;
+		margin: auto;
+	}
+	.header-title{
+		text-align: center;
+		margin: auto;
+	}
+	
+	.header-title h1{
+		font-size: 25px;
+	}
+	.header-title h2{
+		font-size: 16px;
+	}
+	.header-title p{
+		font-size: 14px;
+	}
+	
+	.navbar{
+		text-align: center;
+		margin: auto;
+	}
+	.navbar a, #top-nav a{
+		display: block;
+		text-align: center;
+		margin: auto;
+		padding: 12px;
+		line-height: 1.2em;
+		vertical-align: middle;
+		border: 1px #fff solid;
+		background: #3a3a3a;
+		color: #d8d8d8;
+	}
+	#top-nav a:hover{
+		background: #8e8e8e;
+	}
+	#header-line{
+		display:none;
+	}
+	
+	/** HOMEPAGE **/
+		
+	.home-text{
+		width: 220px;
+		padding: 0;
+		margin: auto;
+		font-size: 16px;
+	}
+	#home-abbot{
+		background: url('../images/abbot-xsm.jpg') no-repeat;
+		width: 250px;
+		height: 197px;
+	}
+	#home-purelm-sm{
+		background: url('../images/pur_elm-xsm.jpg') no-repeat;
+		width: 250px;
+		height: 166px;
+		display: inline-block;
+	}
+	#home-martel{
+		background: url('../images/martel-xsm.jpg') no-repeat;
+		width: 250px;
+		height: 178px;
+	}
+	
+	/** GALLERY **/
+	
+	
+	
+	/*** FOOTER ***/
+	
+	footer{
+		padding: 0;
+		margin: 0;
+	}
+	#foot-section{
+		box-sizing: border-box;
+		width: 100%;
+		padding: 2% 5%;
+	}
+	#nav-footer a, #nav-contact a{
+		display: block;
+		text-align: center;
+		margin: auto;
+		padding: 12px;
+		line-height: 1.2em;
+		vertical-align: middle;
+		border: 1px #fff solid;
+		background: #3a3a3a;
+	}
+	#nav-footer a:hover{
+		color: #3a3a3a;
+		background: #8e8e8e;
+	}
+	#nav-contact a:hover{
+		color: #3a3a3a;
+		background: #8e8e8e;
+	}
+	
+	#alp-link{
+		text-align: center;
+		margin: auto;
+	}
+	#alp-link img{
+		margin: 0;
+		padding: 0;
+	}
+}
